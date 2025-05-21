@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+      animation: fadeInBody 1.5s ease-in-out;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0077ff, #00c3ff);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    a.website-link {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .projects, .reviews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0077ff;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>John's Portfolio</h1>
+    <p><a href="https://johnswebsite.com" class="website-link" target="_blank">Visit my website</a></p>
+  </header>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal website showcasing my work and skills using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Built using React and OpenWeatherMap API to display real-time weather updates.</p>
+      </div>
+      <div class="card">
+        <h3>Task Manager</h3>
+        <p>A simple CRUD-based to-do list using Node.js and MongoDB with user login support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reviews</h2>
+    <div class="reviews">
+      <div class="card">
+        <p>"John's work is exceptional. Always delivers on time!"</p>
+        <strong>- Client A</strong>
+      </div>
+      <div class="card">
+        <p>"Very professional and easy to communicate with."</p>
+        <strong>- Client B</strong>
+      </div>
+      <div class="card">
+        <p>"Loved the UI design and responsiveness of the project."</p>
+        <strong>- Client C</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 John | All rights reserved.</p>
+  </footer>
+</body>
+</html>
